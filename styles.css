@@ -1,0 +1,708 @@
+
+nav{
+padding:10px;
+text-align:center;
+border-bottom:1px solid #000;
+}
+nav a{
+  margin-left:20px;
+  font-size:20px;
+  text-decoration:none;
+  font-weight:bold;
+  padding:10px;
+  color:#000;
+  border-radius:10px;
+  transition:1s;
+}
+nav a:hover{
+  background:rgba(0,0,0,0.5);
+  border-bottom:1px solid #000;
+}
+nav #right{
+  float:right;
+  margin-right:20px;
+}
+nav #login{
+  margin-right:-20px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 2000px;
+position: relative;
+margin: fixed;
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* Style Untuk Moving Banner */
+
+/* CSS HOMEPAGE */
+
+.wrapper {
+width: 500px;
+margin: fixed;
+}
+.welcome-body {
+background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://getwallpapers.com/wallpaper/full/9/b/e/374783.jpg);
+height: 100vh;
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment:fixed;
+margin-top:-10px;
+
+}
+
+.welcome-text {
+position: absolute;
+width: 600px;
+height: 300px;
+margin: 15% 30%;
+text-align: center;
+}
+.welcome-text h1 {
+text-align: center;
+color: #fff;
+text-transform: uppercase;
+font-size: 60px;
+}
+.welcome-text h1 span {
+color: #00fecb;
+}
+.welcome-text a {
+border: 1px solid #fff;
+padding: 10px 25px;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+margin-top: 20px;
+display: inline-block;
+color: #fff;
+}
+.welcome-text a:hover {
+background: #fff;
+color: #333;
+}
+/*resposive*/
+
+@media (max-width:600px) {
+
+.welcome-text {
+  width: 100%;
+  height: auto;
+  margin: 30% 0;
+}
+.welcome-text h1 {
+  font-size: 30px;
+}
+}
+
+/* CSS HOMEPAGE */
+/*REQUEST*/
+#request_form{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://getwallpapers.com/wallpaper/full/9/b/e/374783.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  margin-top:-10px;
+ }
+ #request_form input, textarea, select, button {
+  color: #fff;
+  font-size: 15px; }
+  #request_form input[type='text']:focus{
+    outline:none;
+  }
+  #request_form .wrapper .inner {
+  width: 758px;
+  height:100%;
+  margin-left:70%;
+  margin-top:10px;
+  background: rgba(255,255,255,0.2);
+  padding: 77px 99px 87px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -ms-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  -o-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2); }
+
+  #request_form .wrapper textarea {
+  resize: none; }
+
+  #request_form .wrapper h3 {
+  text-transform: uppercase;
+  font-size: 45px;
+  font-family: "Montserrat-Bold";
+  margin-bottom: 12px; 
+  color:#fff;
+}
+
+#request_form .wrapper p {
+  color:#fff;
+  text-align: center;
+  padding: 0 10px;
+  margin-bottom: 55px;
+  line-height: 1.8; }
+
+#request_form .wrapper .form-group {
+  position: relative;
+  display: block;
+  margin-bottom: 48px; }
+#request_form .wrapper .form-group span {
+    font-size: 15px;
+    color: #00ade6;
+    position: absolute;
+    top: 11px;
+    transition: all .2s ease;
+    transform-origin: 0 0;
+    cursor: text; }
+#request_form .wrapper .form-group span.border {
+    height: 2px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 41px;
+    transform: scaleX(0);
+    transition: all .15s ease;
+    background: #fff; }
+
+#request_form .wrapper .form-control {
+  border: none;
+  border-bottom: 2px solid #00ade6;
+  display: block;
+  width: 100%;
+  height: 43px;
+  font-size: 15px;
+  background: none;
+  font-family: "Montserrat-SemiBold"; }
+  .form-control:focus, .form-control:valid {
+    border-bottom: 2px solid #fff; }
+    .form-control:focus + span, .form-control:valid + span {
+      transform: translateY(-22px) scale(0.8); }
+      .form-control:focus + span + .border, .form-control:valid + span + .border {
+        transform: scaleX(1); }
+
+#request_form .wrapper textarea.form-control {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#request_form .wrapper button {
+  border: none;
+  width: 162px;
+  height: 51px;
+  border: 2px solid #fff;
+  margin: auto;
+  margin-top: 60px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  background: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat-SemiBold";
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+#request_form .wrapper button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2098D1;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+#request_form .wrapper button:hover {
+    border-color: transparent; }
+#request_form .wrapper button:hover:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); }
+ #request_form .wrapper button:hover i {
+      -webkit-transform: translateX(4px);
+      transform: translateX(4px); }
+/* MOVIES */
+#movie_list .column {
+float: left;
+width: 33.33%;
+padding: 5px;
+position:relative;
+}
+#movie_list .middle button{
+width:150px;
+height:53px;
+cursor:pointer;
+background-color:#00ff00;
+border: none;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+border-radius: 8px;
+padding: 5px;
+font-size: 20px;
+}
+#movie_list .row{
+  width:80%;
+  margin:auto;
+  text-align:center;
+padding:20px;
+}
+/* Clearfix (clear floats) */
+#movie_list .row::after {
+content: "";
+clear: both;
+display: table;
+}
+#movie_list .column img{
+width: 70%;
+height: 380px;
+}
+#movie_list .column:hover img {
+opacity: 0.3;
+}
+
+#movie_list .column:hover .middle {
+opacity: 1;
+}
+#movie_list{
+background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://getwallpapers.com/wallpaper/full/9/b/e/374783.jpg);
+background-size:cover;
+background-repeat: no-repeat;
+background-attachment:fixed;
+}
+#movie_list .middle {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 55%;
+left: 28%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+}
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+background-color: #fefefe;
+margin: auto;
+border: 1px solid #888;
+width: 80%;
+height:500px;
+}
+iframe{
+width:100%;
+height:100%;
+}
+#movie_list .button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+#movie_list .button span:after {
+content: '>>';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+color:#000;
+}
+
+#movie_list .button:hover span {
+padding-right: 25px;
+}
+
+#movie_list .button:hover span:after {
+opacity: 1;
+right: 0;
+}
+/* CONTACT */
+#contact-section .container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+  }
+  /* contact form css */
+
+
+  #contact-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://getwallpapers.com/wallpaper/full/9/b/e/374783.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    width: 100% ;
+    padding-bottom: 2%;
+  }
+
+  #contact-section .container h2{
+    text-align: center;
+     text-decoration: underline;
+      /* text-decoration-color:red; */
+      text-underline-position: under;
+      color: rgb(238, 235, 235);
+      letter-spacing: 2px;
+      
+  }
+  
+
+  #contact-section .container p{
+    text-align: center; 
+    width: 70%; 
+    margin-left: auto;
+     margin-right: auto; 
+     padding-bottom: 3%;
+     color: #fff;
+     letter-spacing:3px;
+  }
+
+  #contact-section .contact-form i.fa{
+    /* color: red; */
+    /* color: #fff; */
+    font-size: 22px; 
+    padding: 3%;
+    background-color: none;
+    border-radius: 80%;
+    margin: 2%;
+    /* border: 2px solid #fff; */
+    cursor: pointer;
+    border:2px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+  }
+  
+  #contact-section .contact-form i.fa:hover{
+    cursor: pointer;
+    border:2px solid white;
+    color: white;
+  }
+   
+  #contact-section .contact-form{
+      display: grid;
+      grid-template-columns: auto auto;
+       }
+    
+       #contact-section .form-info{
+      font-size: 16px;
+      font-style: italic;
+      color: white;
+      letter-spacing: 2px;
+    }
+    #contact-section input{
+      padding: 10px;
+      margin:10px;
+      width: 70%;
+      background-color:rgba(136, 133, 133, 0.5);
+      color: white;
+      border: none;
+      outline:none;
+    }
+
+    #contact-section input::placeholder{
+      color: white;
+    }
+  
+    #contact-section textarea{
+    padding: 10px;
+    margin: 10px;     
+    width: 70%;
+    background-color:rgba(136, 133, 133, 0.5);
+    color: white;
+    border: none;
+    outline:none;
+   }
+   textarea::placeholder{
+     color: white;
+   }
+   
+   textarea{
+    resize:none;
+   } 
+  
+   #contact-section .submit{
+    width: 40%;
+    background: none;
+    padding: 4px;
+    outline: none;
+     /* border: 1px solid #fff;
+    color: #fff; */
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-left: 3%;
+    border:2px solid rgb(190, 190, 190);
+    color: rgb(190, 190, 190);
+   }
+
+   .submit:hover{
+         border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+   }
+
+      /* media queries */
+  @media (max-width: 768px){
+
+#contact-section .contact-form{
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    #contact-section .submit{
+
+      width: 60%;
+    }
+
+}
+/* ABOUT */
+.aboutus .column {
+float:left ;
+width: 50%;
+margin-bottom: 16px;
+padding: 0 8px;
+}
+.aboutus .card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+margin: 6px;
+}
+
+.aboutus .about-section {
+padding: 50px;
+text-align: center;
+background-color: #474e5d;
+color: white;
+}
+
+.aboutus .container {
+padding: 0 16px;
+}
+
+.aboutus .container::after, .row::after {
+content: "";
+clear: both;
+display: table;
+}
+
+.aboutus .title {
+color: grey;
+}
+
+.aboutus .button {
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: white;
+background-color: #000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+}
+
+.aboutus .button:hover {
+background-color: #555;
+}
+.aboutus .row {
+width: 60% ;
+text-align:center;
+margin: auto;
+color: #fff;
+}
+
+/* CSS FOOTER */
+
+footer{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: #222;
+  color: #fff;
+  padding: 10px 0;
+}
+.container{
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+li{
+  list-style: none;
+  line-height: 2;
+}
+a{
+  text-decoration: none;
+  color: #ccc;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.items{
+  flex-basis: 20%;
+}
+.items .logo{
+  text-transform: capitalize;
+  font-size: 1.4em;
+  color: #b6b6b6;
+}
+.items p{
+  margin: 1.2em 0;
+}
+.social{
+  display: flex;
+}
+.social a{
+  height: 30px;
+  width: 30px;
+  background: #383535;
+  border-radius: 5px;
+  margin:10px 5px;
+  text-align: center;
+}
+.social a i{
+  font-size: 1.3em;
+  line-height: 30px;
+}
+.items h3{
+  position: relative;
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+.items h3::after{
+  content:"";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #fff;
+  bottom: -4px;
+  left: 0;
+}
+hr{
+  opacity: .3;
+}
+footer .end{
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+@media (max-width:640px){
+  .items{
+  flex-basis: 80%;
+  margin: auto;
+}
+
+}
+/* CSS FOOTER */

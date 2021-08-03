@@ -1,0 +1,43 @@
+<?php
+
+session_start();
+define('HOST_HEADER',$host=array('localhost','127.0.0.1'));
+define('DVD_PATH','/dvd');
+define('ADMIN_PATH','/dvd/system_office');
+define('STRING_TOKEN','0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+define('TOKEN_LENGTH',120);
+define('UPLOADED_LOCATION','../files/');
+define('FILE_LOC','../../files/');
+define('_PROFILE_','../profile/');
+define('DVD_LOGIN','login');
+define('DVD_USER','username');
+define('DVD_PASS','password');
+define('DVD_XSRF','csrf-token');
+define('_DATA_',$_POST);
+define('_FILE_',$_FILES);
+define('_NUM_','check');
+define('TABLE1','dvdtitles');
+define('TABLE2','dvdActors');
+define('TABLE3','actorTitles');
+define('COLUMN1','ASIN');
+define('COLUMN2','actorID');
+if(in_array($_SERVER['SERVER_NAME'],HOST_HEADER))
+ {
+    define('_URL_',$_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/dvd/");
+ }
+ else
+ {
+     define('_URL_',$_SERVER['REQUEST_SCHEME'].'://127.0.0.1/dvd/');
+ }
+define('MainPage',$_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/dvd/system_office/");
+define('Logout',$_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/dvd/system_office/logout");
+define('IMGDISP',$_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/dvd/system_office/library/image.php?asin=");
+define('IMGDISP2',$_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/dvd/images.php?asin=");
+define('IMGDISP3',$_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/dvd/images.php?matrix=");
+define('_ABOUTD_',$_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/dvd/system_office/page/about/delete?id=");
+define('_ABOUTU_',$_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/dvd/system_office/page/about/update?id=");
+define('W_Table','<script>alert("You may insert into wrong table");window.location.replace("'.ADMIN_PATH.'");</script>');
+define('PRFIMG',$_SERVER['REQUEST_SCHEME']."://".$_SERVER['SERVER_NAME']."/dvd/system_office/library/profile.php?profile=");
+define('_PAGE_',array('page','category','home'));
+define('MIMETYPE',array('jpg','jpeg','png','gif','bmp'));
+define("_EMAIL_",$_SERVER['SERVER_ADMIN']);
